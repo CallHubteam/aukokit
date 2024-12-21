@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CallHub - Vaizdo Skambučių Platforma</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <header>CallHub - Vaizdo Skambučių Platforma 💋</header>
+    <div class="container">
+        <h1>Sveiki atvykę į CallHub</h1>
+        <p>Pasiruoškite vaizdo skambučiams realiuoju laiku! 💎🔥</p>
+        <button class="btn" onclick="startVideoCall()">Pradėti Skambutį</button>
+        <div class="video-container">
+            <video id="localVideo" autoplay playsinline muted></video>
+        </div>
+    </div>
+    <footer>
+        &copy; 2024 CallHub. Visos teisės saugomos.
+    </footer>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
